@@ -9,6 +9,8 @@ namespace MyDemo.Controllers
 {
     public class VideoGamesController : Controller
     {
+        [Route("VideoGames/rating/{rating:regex(\\w{1})")] //replacing the route commented out in routeconfig
+
         // GET: /VideoGames/Game
         public ActionResult Game()
         {

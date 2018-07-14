@@ -13,12 +13,14 @@ namespace MyDemo
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
+            routes.MapMvcAttributeRoutes();
+
+           /* routes.MapRoute(
                 "GamesByRating",
                 "videogames/rating/{rating}",
                 new { controller = "VideoGames", action = "ByRating" },
                 new {rating = @"\w{1}" }
-                );
+                );*/
 
 
             routes.MapRoute(
