@@ -202,6 +202,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807151944533_InitialModel.cs" />
+    <Compile Include="Migrations\201807151944533_InitialModel.Designer.cs">
+      <DependentUpon>201807151944533_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807152243350_InitialModel1.cs" />
+    <Compile Include="Migrations\201807152243350_InitialModel1.Designer.cs">
+      <DependentUpon>201807152243350_InitialModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807152246414_AddMemberShareNum.cs" />
+    <Compile Include="Migrations\201807152246414_AddMemberShareNum.Designer.cs">
+      <DependentUpon>201807152246414_AddMemberShareNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807152257242_AddVideoGamesTable.cs" />
+    <Compile Include="Migrations\201807152257242_AddVideoGamesTable.Designer.cs">
+      <DependentUpon>201807152257242_AddVideoGamesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807152258562_PlsAddVidyaGames.cs" />
+    <Compile Include="Migrations\201807152258562_PlsAddVidyaGames.Designer.cs">
+      <DependentUpon>201807152258562_PlsAddVidyaGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -292,6 +313,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807151944533_InitialModel.resx">
+      <DependentUpon>201807151944533_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807152243350_InitialModel1.resx">
+      <DependentUpon>201807152243350_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807152246414_AddMemberShareNum.resx">
+      <DependentUpon>201807152246414_AddMemberShareNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807152257242_AddVideoGamesTable.resx">
+      <DependentUpon>201807152257242_AddVideoGamesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807152258562_PlsAddVidyaGames.resx">
+      <DependentUpon>201807152258562_PlsAddVidyaGames.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

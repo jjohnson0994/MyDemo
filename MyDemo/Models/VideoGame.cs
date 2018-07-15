@@ -13,5 +13,6 @@ namespace MyDemo.Models
         public string Name { get; set; }
         public string Genre { get; set; }
         public char Rating { get; set; }
+        public bool IsShareable { get; set; } //can be shared with another user
     }
 }

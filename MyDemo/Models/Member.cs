@@ -12,5 +12,6 @@ namespace MyDemo.Models
         public int Id { get; set; }
         public string Name { get; set;  }
         public int Age { get; set; }
+        public int ShareNum { get; set; } //num of games this member is currently sharing
     }
 }

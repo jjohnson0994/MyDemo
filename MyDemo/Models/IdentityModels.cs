@@ -18,8 +18,10 @@ namespace MyDemo.Models
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //gateway to the db
     {
+        public DbSet<Member> Members { get; set; }
+        public DbSet<VideoGame> VideoGames { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
