@@ -13,7 +13,7 @@ namespace MyDemo
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapMvcAttributeRoutes();
+            routes.MapMvcAttributeRoutes(); //lets me create the route in its associated controller
 
            /* routes.MapRoute(
                 "GamesByRating",

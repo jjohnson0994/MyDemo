@@ -1,0 +1,21 @@
+﻿@model MyDemo.ViewModels.MembersViewModel
+@{
+    ViewBag.Title = "Members";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Members</h2>
+
+@if (Model.Members.Count == 0)
+{
+    <p>No Members of MyDemo have liked this game yet.</p>
+}
+else
+{
+    <ul>
+        @foreach (var member in Model.Members)
+        {
+            <li>@member.Name</li>
+        }
+    </ul>
+}

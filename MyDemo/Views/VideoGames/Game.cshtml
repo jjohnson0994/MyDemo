@@ -1,17 +1,15 @@
-﻿@model MyDemo.Models.VideoGame
+﻿@model MyDemo.ViewModels.VideoGamesViewModel
 @{
     ViewBag.Title = "Video Games";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Video Games I Play</h2>
+<h2>Games</h2>
 
-<table>Name: @Model.Name</table>
-<p>Rating: @Model.Rating</p>
-<p>Genre: @Model.Genre</p>
+<h3>Name: @Model.Game.Name</h3>
+<p>Rating: @Model.Game.Rating</p>
+<p>Genre: @Model.Game.Genre</p>
 
-
-<p></p>
 
 @*
     This is how you write a comment    

@@ -4,24 +4,30 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MyDemo.Models;
+using MyDemo.ViewModels;
 
 namespace MyDemo.Controllers
 {
     public class VideoGamesController : Controller
     {
-        [Route("VideoGames/rating/{rating:regex(\\w{1})")] //replacing the route commented out in routeconfig
+        //[Route("VideoGames/rating/{rating:regex(\\w{1})}")] //replacing the route commented out in routeconfig
 
         // GET: /VideoGames/Game
         public ActionResult Game()
         {
-            var Game = new VideoGame();
+            var game = new VideoGame();
 
-            Game.Id = 1;
-            Game.Name = "Doom";
-            Game.Rating = 'M';
-            Game.Genre = "FPS";
+            var viewModel = new VideoGamesViewModel
+            {
+                Game = game
+            };
 
-            return View(Game);
+            game.Id = 1;
+            game.Name = "Doom";
+            game.Rating = 'M';
+            game.Genre = "FPS";
+
+            return View(viewModel);
         }
 
         // /VideoGames
@@ -40,8 +46,9 @@ namespace MyDemo.Controllers
             return Content("Page Index = " + pageIndex);
         }
 
-        public ActionResult ByRating(char rating)
+        public ActionResult ByRating(char? rating)
         {
+
             return Content("ESRB Rating: " + rating);
         }
     }
