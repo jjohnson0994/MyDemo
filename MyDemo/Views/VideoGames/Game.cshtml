@@ -6,9 +6,20 @@
 
 <h2>Games</h2>
 
-<h3>Name: @Model.Game.Name</h3>
-<p>Rating: @Model.Game.Rating</p>
-<p>Genre: @Model.Game.Genre</p>
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Rating</th>
+    </tr>
+    <tr>
+        <td>@Model.Game.Id</td>
+        <td>@Model.Game.Name</td>
+        <td>@Model.Game.Genre</td>
+        <td>@Model.Game.Rating</td>
+    </tr>
+</table>
 
 
 @*
